@@ -1,10 +1,9 @@
 ```
 #include <iostream>
 #include <iomanip> 
-
 using namespace std;
-
-void showMenu() {
+void showMenu() 
+{
 	cout << "选择运算类型：" << endl;
 	cout << "1. 加法" << endl;
 	cout << "2. 减法" << endl;
@@ -12,27 +11,26 @@ void showMenu() {
 	cout << "4. 除法" << endl;
 	cout << "5. 退出" << endl;
 }
-
-double add(double a, double b) {
-
+double add(double a, double b) 
+{
 return a + b;
 }
-
-double subtract(double a, double b) {
-	return a - b;
+double subtract(double a, double b)
+{
+return a - b;
 }
-
-double multiply(double a, double b) {
-	return a * b;
+double multiply(double a, double b)
+{
+return a * b;
 }
-
-double divide(double a, double b) {
-	if (b == 0) {
+double divide(double a, double b)
+{
+	if (b == 0) 
+	{
 		throw runtime_error("除数不能为零！");
 	}
 	return a / b;
 }
-
 int main() {
 	int choice;
 	double num1, num2, result;
